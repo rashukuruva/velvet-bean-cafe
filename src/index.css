@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #3E2723;
+    background-color: #FFF8F2;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@keyframes steam-rise-1 {
+  0% { transform: translateY(0) scaleX(1); opacity: 0; }
+  30% { opacity: 0.6; }
+  60% { transform: translateY(-16px) scaleX(1.3) rotate(4deg); opacity: 0.4; }
+  100% { transform: translateY(-32px) scaleX(1.6) rotate(-6deg); opacity: 0; }
+}
+
+@keyframes steam-rise-2 {
+  0% { transform: translateY(0) scaleX(1); opacity: 0; }
+  25% { opacity: 0.7; }
+  65% { transform: translateY(-20px) scaleX(1.2) rotate(-5deg); opacity: 0.35; }
+  100% { transform: translateY(-36px) scaleX(1.7) rotate(5deg); opacity: 0; }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-steam-1 {
+  animation: steam-rise-1 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-steam-2 {
+  animation: steam-rise-2 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.2s;
+}
+
+.animate-steam-3 {
+  animation: steam-rise-1 3.8s cubic-bezier(0.4, 0, 0.2, 1) infinite 2.2s;
+}
+
+.animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEBE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #A1887F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #795548;
+}
+

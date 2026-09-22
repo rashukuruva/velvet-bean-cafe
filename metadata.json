@@ -1,0 +1,8 @@
+{
+  "name": "Velvet Bean Café",
+  "description": "A cozy premium coffee shop experience with freshly brewed specialty coffees, artisan pastries, table reservations, and seamless ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
